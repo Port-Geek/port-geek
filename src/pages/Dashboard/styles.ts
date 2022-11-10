@@ -205,6 +205,8 @@ export const Container = styled.div`
       justify-content: center;
       gap: 1rem;
 
+      border-radius: 8px;
+      border: 2px solid var(--color-primary);
       padding: 10px;
 
       width: 600px;
@@ -218,7 +220,7 @@ export const Container = styled.div`
 
       .mini-port {
         width: 90%;
-        height: auto;   
+        height: auto;
 
         display: block;
         margin: 1rem auto 0;
