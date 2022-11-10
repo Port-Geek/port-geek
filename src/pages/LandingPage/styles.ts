@@ -49,7 +49,7 @@ export const DescriptionSection = styled.section`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 20px;
+  padding-top: 30px;
 
   & > h1 {
     font-size: var(--font-subtitle-28);
@@ -154,16 +154,16 @@ export const AsideSpace = styled.aside`
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #c2e0f9;
   background-image: url(${AsideImg});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 30px;
 
   & > h2 {
-    margin-top: 100px;
     font-size: var(--font-subtitle-28);
     font-family: var(--font-secondary-inter);
     font-weight: var(--font-weight-600);
