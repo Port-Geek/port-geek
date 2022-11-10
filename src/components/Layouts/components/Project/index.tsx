@@ -32,7 +32,8 @@ export const Project = ({
       borderColor={borderColor}
       className="Container__Project"
     >
-      <h2 className="Project__Title">{projectName}</h2>
+      <h2 className="Project__Title">Main Project</h2>
+      <h3 className="Project__Title">{projectName}</h3>
       <div className="Project__Flex--Box">
         <div className="ProjectImage__Box">
           <figure>
