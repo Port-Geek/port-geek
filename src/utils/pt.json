@@ -18,6 +18,13 @@
     "The name needs at least 3 digits!": "O nome precisa de pelo menos 3 dígitos!",
     "The password must contain at least 8 digits!": "A senha deve conter pelo menos 8 dígitos!",
     "The password must contain at least one capital letter, one special character and a number": "A senha deve conter pelo menos uma letra maiúscula, um caractere especial e um número",
-    "Passwords are not the same!": "Senhas não são as mesmas"
+    "Passwords are not the same!": "Senhas não são as mesmas",
+    "Successfully registered!": "Registro efetuado com sucesso!",
+    "Login successfully!": "Login efetuado com sucesso!",
+    "Incorrect Credentials!": "Credenciais incorretas!",
+    "Email already exists!": "Email já existe!",
+    "The password must contain at least one capital letter": "A senha deve conter ao mínimo uma letra maiúscula",
+    "The password must contain at least one special character": "A senha deve conter ao mínimo um caractere especial",
+    "The password must contain at least one number": "A senha deve conter ao menos um número"
   }
 }

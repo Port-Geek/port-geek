@@ -6,6 +6,7 @@ import { postLogin, iUserLogin } from "../../services/postLogin";
 import { postRegister, iRegisterData } from "../../services/postRegister";
 import { iAPIData } from "./../../services/getProfile";
 import { LoadingContext } from "../LoadingContext";
+import { useTranslation } from "react-i18next";
 
 export const UserContext = createContext<iUserContext>({} as iUserContext);
 
@@ -23,6 +24,7 @@ interface iUserContext {
 }
 
 export function UserProvider(): JSX.Element {
+  const { t } = useTranslation();
   const [user, setUser] = useState<iAPIData | null>(null);
   const [emaiDefault, setEmailDefault] = useState<string>("");
   const [isOpenModalLogin, setIsOpenModalLogin] = useState<boolean>(false);
@@ -37,14 +39,14 @@ export function UserProvider(): JSX.Element {
     try {
       await postRegister(data);
 
-      successToast("Successfully registered!");
+      successToast(t("Successfully registered!"));
 
       setIsOpenModalRegister(false);
       setIsOpenModalLogin(true);
     } catch (error: any) {
       console.error(error);
       const message: string = error.response.data;
-      errorToast(`${message}!`);
+      errorToast(t(`${message}!`));
     }
     setLoading(false);
   };
@@ -53,7 +55,7 @@ export function UserProvider(): JSX.Element {
     setLoading(true);
     try {
       const response = await postLogin(data);
-      successToast("Login successfully!");
+      successToast(t("Login successfully!"));
       setUser(response.data.user);
       localStorage.setItem("@PortGeek:token", response.data.accessToken);
       localStorage.setItem("@PortGeek:id", response.data.user.id);
@@ -64,7 +66,7 @@ export function UserProvider(): JSX.Element {
       navigate("/dashboard");
     } catch (error: any) {
       console.error(error);
-      errorToast("Incorrect Credentials!");
+      errorToast(t("Incorrect Credentials!"));
     }
     setLoading(false);
   };
