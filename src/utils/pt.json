@@ -5,7 +5,7 @@
     "Sign up": "Registrar",
     "A new way to show who you are.": "Um jeito novo para mostrar quem você é.",
     "To make you a": "Para fazer de você um",
-    "We are students at Kenzie Academy Brazil and we would like to present our final Front-end project. Developed from start to end exclusively by our group of 6 members, the project was inspired by a huge need to help the developer community to create their first portfolio quickly and practically, helping to get their first job.": "Somos Estudantes da Kenzie Academy Brazil e gostaríamos de apresentar nosso projeto final de Front-end. Desenvolvido do início ao fim exclusivamente pelo nosso grupo de 6 integrantes, o projeto foi inspirado por uma enorme necessidade de auxiliar a comunidade de desenvolvedores a criar o seu primeiro portfólio de forma rápida e prática, ajudando a conquistar o primeiro emprego.",
+    "We are Students at Kenzie Academy Brazil and we would like to present our final Front-end project. Developed from start to finish exclusively by our group of 6 members, the project was inspired by a huge need to help the developer community to create their first portfolio quickly and practically, helping to get their first job.": "Somos Estudantes da Kenzie Academy Brazil e gostaríamos de apresentar nosso projeto final de Front-end. Desenvolvido do início ao fim exclusivamente pelo nosso grupo de 6 integrantes, o projeto foi inspirado por uma enorme necessidade de auxiliar a comunidade de desenvolvedores a criar o seu primeiro portfólio de forma rápida e prática, ajudando a conquistar o primeiro emprego.",
     "Group Members": "Integrantes",
     "Name": "Nome",
     "Enter your name": "Digite seu nome",
@@ -18,6 +18,13 @@
     "The name needs at least 3 digits!": "O nome precisa de pelo menos 3 dígitos!",
     "The password must contain at least 8 digits!": "A senha deve conter pelo menos 8 dígitos!",
     "The password must contain at least one capital letter, one special character and a number": "A senha deve conter pelo menos uma letra maiúscula, um caractere especial e um número",
-    "Passwords are not the same!": "Senhas não são as mesmas"
+    "Passwords are not the same!": "Senhas não são as mesmas",
+    "Successfully registered!": "Registro efetuado com sucesso!",
+    "Login successfully!": "Login efetuado com sucesso!",
+    "Incorrect Credentials!": "Credenciais incorretas!",
+    "Email already exists!": "Email já existe!",
+    "The password must contain at least one capital letter": "A senha deve conter ao mínimo uma letra maiúscula",
+    "The password must contain at least one special character": "A senha deve conter ao mínimo um caractere especial",
+    "The password must contain at least one number": "A senha deve conter ao menos um número"
   }
 }

@@ -19,7 +19,7 @@ export const ThirthLayout = ({ portfInfos }: ILayout) => {
     <ContainerThirthLayout>
       {isSeeingModal ? (
         <ModalDescription
-          projectDescription={""}
+          projectDescription={project.project_description}
           bgColor={"--colorPrimaryL3"}
           color={"--titleLayout"}
           borderColor={"--colorSecundaryL3"}

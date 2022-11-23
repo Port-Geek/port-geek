@@ -31,6 +31,12 @@ export const ProjectStyled = styled.section<iButtons>`
     font-weight: 700;
   }
 
+  h3 {
+    color: ${({ color }) => `var(${color})`};
+    padding: ${({ padding }) => `${padding}em 0`};
+    font-weight: 700;
+  }
+
   a {
     display: flex;
     align-items: center;
