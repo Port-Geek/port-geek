@@ -3,7 +3,8 @@ import * as yup from "yup";
 export const schemaMaxDate = () => {
   const date = new Date();
   const dateArray = date.toLocaleDateString().split("/");
-  return `${dateArray[0]}/${dateArray[1]}/${+dateArray[2] - 18}`;
+  const atualDate = `${+dateArray[2] - 18}/${dateArray[1]}/${dateArray[0]}`;
+  return atualDate;
 };
 
 export const schemaPortModal = yup.object({
@@ -11,10 +12,10 @@ export const schemaPortModal = yup.object({
   age: yup.number(),
   birthDate: yup
     .date()
+    .nullable()
     .max(schemaMaxDate(), "Must be over 18 years old")
     .required("Birth date is required")
-    .typeError("Birth date is required")
-    .nullable(),
+    .typeError("Birth date is required"),
   aboutYou: yup.string().required("Description about you is required"),
   city: yup
     .string()
